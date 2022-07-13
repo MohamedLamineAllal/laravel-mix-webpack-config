@@ -12,7 +12,7 @@ type WebpackConfigCallback = (
 
 class WebpackConfig extends Component {
   public name(): string[] {
-    return ['webpackConfig', 'wc'];
+    return ['getWebpackConfig', 'lwc', 'listenWebpackConfig'];
   }
 
   public register(callback: WebpackConfigCallback): void {
@@ -22,4 +22,4 @@ class WebpackConfig extends Component {
   }
 }
 
-mix.extend('webpackConfig', new WebpackConfig());
+mix.extend('getWebpackConfig', new WebpackConfig());
