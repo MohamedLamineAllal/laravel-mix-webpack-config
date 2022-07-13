@@ -37,6 +37,7 @@
     "email": "allalmohamedlamine@gmail.com",
     "name": "Mohamed Lamine Allal"
   },
+  "license": "MIT",
   "keywords": [
     "laravel-mix",
     "extension",
