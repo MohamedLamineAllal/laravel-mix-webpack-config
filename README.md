@@ -9,7 +9,7 @@ I suggest using pnpm
 pnpm
 
 ```
-pnpm install laravel-mix-webpack-config -D
+pnpm add laravel-mix-webpack-config -D
 ```
 
 npm
