@@ -1,6 +1,6 @@
 # Laravel mix WebpackConfig extension
 
-A laravel mix extension that allow us to get the webpack config as a string. So we do whatever we want with it. Including writing to files. Unlike dump() component that only print to console.
+A laravel mix extension that allow us to get the webpack config as a string. So we do whatever we want with it. Including writing to files. Unlike `.dump()` component that only print to console.
 
 ## Installation:
 
