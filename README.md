@@ -62,8 +62,8 @@ Take a callback as a param. With signature:
 ) => void;
 ```
 
-_webpackConfig_: the final webpack config as an object.
-_stringify_: Same circular stringify function that is implemented in the Dump component (when you use .dump()). So you expect to get the same string as the one used by `.dump()` logging component.
+**webpackConfig**: the final webpack config as an object.<br>
+**stringify**: Same circular stringify function that is implemented in the Dump component (when you use .dump()). So you expect to get the same string as the one used by `.dump()` logging component.
 
 Giving this structure. You can do whatever you want with the object. Including something involving stringify like writing to a file.
 
