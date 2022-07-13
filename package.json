@@ -1,0 +1,31 @@
+{
+  "name": "laravel-mix-webpack-config",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "lint": "npx eslint src/**",
+    "lint:fix": "npx eslint src/** --fix",
+    "commitlint": "npx commitlint --edit"
+  },
+  "dependencies": {
+    "laravel-mix": "^6.0.49",
+    "webpack": "^5.73.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@evilmartians/lefthook": "^1.0.4",
+    "@types/eslint": "^8.4.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}

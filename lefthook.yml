@@ -1,0 +1,15 @@
+define: &check_ts_glob '{src/**/*.ts, .eslintrc.js, tsconfig.json, .prettierrc.js, lefthook.yml, package.json, .eslintignore}'
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      glob: *check_ts_glob
+      run: npm run lint {staged_files}
+    types:
+      glob: *check_ts_glob
+      run: npx tsc --noEmit
+commit-msg:
+  parallel: true
+  commands:
+    commitlint:
+      run: npm run commitlint
