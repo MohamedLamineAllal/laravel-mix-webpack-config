@@ -16,10 +16,13 @@ class WebpackConfig extends Component {
   }
 
   public register(callback: WebpackConfigCallback): void {
-    Mix.listen('configReadyForUser', (config: WebpackDomain.Configuration) => {
-      callback(config, dumpWebpackConfigComponent.circularStringify);
-    });
+    this.context.listen(
+      'configReadyForUser',
+      (config: WebpackDomain.Configuration) => {
+        callback(config, dumpWebpackConfigComponent.circularStringify);
+      },
+    );
   }
 }
 
-mix.extend('getWebpackConfig', new WebpackConfig());
+mix.extend('getWebpackConfig', WebpackConfig as any);
