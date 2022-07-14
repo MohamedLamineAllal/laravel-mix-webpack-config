@@ -10,7 +10,7 @@
     "url": "https://github.com/MohamedLamineAllal/laravel-mix-webpack-config"
   },
   "scripts": {
-    "prepare": "npm run build",
+    "prepare": "npm run build  && npx lefthook install",
     "build": "tsc",
     "lint": "npx eslint src/**",
     "lint:fix": "npx eslint src/** --fix",

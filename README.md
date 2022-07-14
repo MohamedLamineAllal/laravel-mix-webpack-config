@@ -1,5 +1,8 @@
 # Laravel mix WebpackConfig extension
 
+npmjs: https://www.npmjs.com/package/laravel-mix-webpack-config
+laravel-mix extensions:
+
 A laravel mix extension that allow us to get the webpack config as a string. So we do whatever we want with it. Including writing to files. Unlike `.dump()` component that only print to console.
 
 ```js
@@ -33,7 +36,7 @@ yarn add laravel-mix-webpack-config -D
 ## Usage Example:
 
 ```js
-const mix = require('./laravel-mix/src/index');
+const mix = require('laravel-mix');
 const fs = require('fs');
 
 require('laravel-mix-webpack-config');
@@ -69,7 +72,7 @@ Take a callback as a param. With signature:
 ```
 
 **webpackConfig**: the final webpack config as an object.<br>
-**stringify**: Same circular stringify function that is implemented in the Dump component (when you use .dump()). So you expect to get the same string as the one used by `.dump()` logging component.
+**stringify**: Same circular stringify function that is implemented in the Dump component (when you use `.dump()`). So you expect to get the same string as the one used by `.dump()` logging component.
 
 Giving this structure. You can do whatever you want with the object. Including something involving stringify like writing to a file.
 
