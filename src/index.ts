@@ -1,5 +1,5 @@
 import mix from 'laravel-mix';
-import WebpackDomain from 'webpack';
+import type WebpackDomain from 'webpack';
 import { Component } from 'laravel-mix/src/components/Component';
 import DumpWebpackConfig from 'laravel-mix/src/components/DumpWebpackConfig';
 
