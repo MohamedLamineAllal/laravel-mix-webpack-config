@@ -1,6 +1,9 @@
 {
   "name": "laravel-mix-webpack-config",
   "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
   "version": "1.0.4",
   "repository": {
     "type": "git",
