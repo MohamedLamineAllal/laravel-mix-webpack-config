@@ -1,8 +1,5 @@
 # Laravel mix WebpackConfig extension
 
-**npmjs:** https://www.npmjs.com/package/laravel-mix-webpack-config<br>
-**laravel-mix extensions:** [coming soon]
-
 A laravel mix extension that allow us to get the webpack config as a string. So we do whatever we want with it.<br>
 Including writing to files. Unlike `.dump()` component that only print to console.
 
@@ -11,6 +8,11 @@ mix.getWebpackConfig((config, stringify) => {
   fs.writeFileSync('webpackConfig.output.js', stringify(config));
 });
 ```
+
+## Links
+
+**npmjs:** https://www.npmjs.com/package/laravel-mix-webpack-config<br>
+**laravel-mix extensions:** [coming soon]
 
 ## Installation:
 
