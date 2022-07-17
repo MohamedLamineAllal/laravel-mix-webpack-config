@@ -25,5 +25,6 @@ module.exports = {
     'class-methods-use-this': 'off',
     'import/prefer-default-export': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
+    'max-classes-per-file': 'off',
   },
 };
