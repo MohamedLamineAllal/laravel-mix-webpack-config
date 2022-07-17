@@ -23,6 +23,20 @@ class WebpackConfig extends Component {
       },
     );
   }
+
+  public mix() {
+    const dumpOverride = new (class extends Component {
+      register(callback: WebpackConfigCallback) {
+        this.context.api.dump();
+        this.register(callback);
+      }
+    })(this.context);
+
+    return {
+      dump: dumpOverride,
+      dumpWebpackConfig: dumpOverride,
+    };
+  }
 }
 
 mix.extend('getWebpackConfig', WebpackConfig as any);
