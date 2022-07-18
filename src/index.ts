@@ -25,12 +25,14 @@ class WebpackConfig extends Component {
   }
 
   public mix() {
-    const originalDumpRegistrationFunc = this.context.api.dump.bind(
-      this.context.api,
-    );
+    const originalDumpRegistrationFunc =
+      this.context.api.dumpWebpackConfig.bind(this.context.api);
+
     const dumpOverride: any = (callback: WebpackConfigCallback) => {
       originalDumpRegistrationFunc();
-      this.register(callback);
+      if (callback) {
+        this.register(callback);
+      }
     };
 
     return {
