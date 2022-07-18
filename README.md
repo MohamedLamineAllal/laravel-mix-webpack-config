@@ -92,12 +92,14 @@ Take a callback as a param. With signature:
 
 Giving this structure. You can do whatever you want with the object. Including something involving stringify like writing to a file.
 
+### Patching dump() and dumpWebpackConfig()
+
 `dump()` and `dumpWebpackConfig()` are patched. So they take the same callback. With the same signature. They keep working as before. Plus that callback as an extra part of the patch.<br>
 `dump()`, `dumpWebpackConfig()` => dump the config to the console **+** can get the config as well to do something with it. Like writing to a file.
 
 ### Aliases
 
-You can use any of the bellow Aliases
+You can use any of the bellow Aliases in place of `getWebpackConfig()`.
 
 ```ts
 .getWebpackConfig()
