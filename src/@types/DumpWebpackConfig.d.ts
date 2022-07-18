@@ -3,7 +3,10 @@ declare module 'laravel-mix/src/components/DumpWebpackConfig' {
 
   declare class DumpWebpackConfig {
     constructor(mix: Mix.Api): this;
+
     circularStringify: (config: Record<string, unknown>) => string;
+
+    name: () => string[];
   }
 
   export = DumpWebpackConfig;

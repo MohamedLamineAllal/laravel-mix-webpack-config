@@ -35,10 +35,13 @@ class WebpackConfig extends Component {
       }
     };
 
-    return {
-      dump: dumpOverride,
-      dumpWebpackConfig: dumpOverride,
-    };
+    const overrideObj: Record<string, any> = {};
+
+    dumpWebpackConfigComponent.name().forEach((name) => {
+      overrideObj[name] = dumpOverride;
+    });
+
+    return overrideObj;
   }
 }
 
