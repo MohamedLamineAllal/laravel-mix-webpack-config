@@ -26,5 +26,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     '@typescript-eslint/no-explicit-any': 'warn',
     'max-classes-per-file': 'off',
+    'operator-linebreak': 'off',
   },
 };
