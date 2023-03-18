@@ -24,8 +24,8 @@ mix.dumpWebpackConfig((config, stringify) => {
 
 ## Links
 
-**npmjs:** https://www.npmjs.com/package/laravel-mix-webpack-config<br>
-**laravel-mix extensions:** [coming soon]
+**npmjs:** https://www.npmjs.com/package/laravel-mix-webpack-config   
+**laravel-mix extensions:** https://laravel-mix.com/extensions/webpack-config
 
 ## Installation:
 
